@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css">
+        <link href="_css/styles.css" rel="stylesheet" type="text/css">
+        <link href="_css/mobile_style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <header>
+        <p Title="Society of Mining Engineers,NITK Chapter"><a href="index.html" title="SME NITK"><img class="img-auto" src="Images/SME.jpg" width="1228" height="150" alt="SME logo" align="center"></a></p>
+        <!--
+        <h1>______________________________________________________</h1>   
+    <center><h1>Society of Mining Engineers, NITK Chapter </h1></center>
+    <h1>______________________________________________________</h1> -->
+        <div class="w3-dark-grey">
+        <button class="btn"><a href="index.html" style="text-decoration:none" title="SME NITK">Home</a></button>
+        <button class="btn"><a href="aboutus.html" style="text-decoration:none" title="About Us">About Us</a></button>
+        <button class="btn"><a href="events.html" style="text-decoration:none" title="Events">Events</a></button>
+        <div class="dropdown">
+        <button class="dropbtn">Members</button>
+        <div class="dropdown-content">
+        <a href="hod.html">HOD</a>
+        <a href="facultyadvisor.html">Faculty Advisor</a>
+        <a href="corecommittee.html">Core Committee</a>
+        <a href="websiteteam.html">Website Team</a>
+        </div></div>
+        <button class="btn"><a href="contact.html" style="text-decoration:none" title="Contact">Contact</a></button>
+        </div>
+        </header>
+    </head>
+    <body>
+       <div class="w3-content w3-display-container" style="max-width:1200px">
+  <img class="mySlides" src="Images/TATA_CLIQ_WEB-Carosel-94kb.jpg" style="width:100%">
+  <img class="mySlides" src="Images/Web-Carousel_112kb.jpg" style="width:100%">
+  <img class="mySlides" src="Images/jabong_web_carousel_81kb.jpg" style="width:100%">
+  
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)" ></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+  
+}
+</script>
+
+        <div>TODO write content</div>
+    </body>
+</html>

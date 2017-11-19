@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 22, 2017, 9:49:03 AM
+    Author     : w10
+*/
+@media screen and (max-width: 481px){
+html, body {
+	background: #2c2c2c; /* Beccapurple */
+        margin: 0;
+        
+}
+.img-auto {
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+.img-circle {
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(107, 107, 132);
+        font-size: 16px;
+}
+body {
+	font-family: Century Gothic, Geneva, sans-serif;
+	font-size: 8px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 0;
+        background: #f1f1f1;
+	line-height: 1.8;
+        
+}
+
+        .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px;
+        font-size: 8px;
+        border: none;
+        cursor: pointer;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        }
+        .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px;
+        font-size: 8px;
+        border: none;
+        cursor: pointer;
+        }
+     a:link {
+    color: white;
+    }
+    a:visited {
+    color: white;
+    }
+   .btn:hover {
+    background-color: #3e8e41;
+   }
+   .dropdown-content a {
+        color: black;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 8px;
+        }
+    .w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}    
+    .main1 { 
+        margin:  auto;
+        font-size: 6px;
+        height: 120px;
+}
+.sidebar    {
+    width: 145px;
+    height: 120px;
+    float: left;
+}
+
+.page-wrap  {
+    width: 150px;
+    height: 120px;
+    margin-left: 145px;
+}
+
+.main {
+    width:295px;
+    height:800px;
+    background: #f1f1f1;
+    font-size: 8px;
+   }
+
+.page {
+    width: 100px;
+    display:inline-block;
+    margin-right: -4px;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+}
+
+.page > div {
+    
+    height:400px;
+}
+
+
+.row{
+    
+}
+}
